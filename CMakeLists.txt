@@ -8,6 +8,11 @@ find_package(OpenGL REQUIRED )
 add_executable(main
     src/main.cpp
     dependencies/glad/src/glad.c
+    src/engine/Engine.cpp
+    src/engine/window.hpp
+    src/engine/window.cpp
+    src/engine/engine.hpp
+    src/engine/shader.cpp
 )
 
 target_include_directories(main PRIVATE
